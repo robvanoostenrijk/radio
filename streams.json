@@ -1,0 +1,218 @@
+[
+	{
+		"title": "Beat FM 97.8",
+		"format": "audio/aac",
+		"freq": "97.8",
+		"logo": "beat-97.8.jpg",
+		"url": "https://funasia.streamguys1.com/live3"
+	},
+	{
+		"title": "Big 106.2",
+		"format": "audio/aac",
+		"freq": "106.2",
+		"logo": "big-106.2.jpg",
+		"url": "https://funasia.streamguys1.com/live4"
+	},
+	{
+		"title": "Channel 4 FM",
+		"format": "audio/mpeg",
+		"freq": "104.8",
+		"logo": "channel-4-fm.png",
+		"url": "https://streams.radio.co/sce558c2e6/listen"
+	},
+	{
+		"title": "Dubai 92 FM",
+		"format": "audio/mpeg",
+		"freq": "92.0",
+		"logo": "dubai-92.jpg",
+		"url": "https://stream.radiojar.com/6ty5rrkerxquv"
+	},
+	{
+		"break": true
+	},
+	{
+		"title": "Dubai Eye",
+		"format": "audio/mpeg",
+		"freq": "103.8",
+		"logo": "dubai-eye.jpg",
+		"url": "https://stream.radiojar.com/shcthrfbsxquv"
+	},
+	{
+		"title": "Pure 94.7",
+		"format": "audio/mpeg",
+		"freq": "94.7",
+		"logo": "pure-94.7.png",
+		"url": "https://stream.rcs.revma.com/r6hktd84u7zuv"
+	},
+	{
+		"title": "Radio 1 UAE",
+		"format": "application/x-mpegurl",
+		"freq": "104.1",
+		"logo": "radio-1-uae.png",
+		"url": "https://vo-live.cdb.cdn.orange.com/Content/Channel/Radio1/HLS/index.m3u8"
+	},
+	{
+		"title": "Radio 2 UAE",
+		"format": "application/x-mpegurl",
+		"freq": "99.3",
+		"logo": "radio-2-uae.png",
+		"url": "https://vo-live.cdb.cdn.orange.com/Content/Channel/radio_2/HLS/index.m3u8"
+	},
+	{
+		"break": true
+	},
+	{
+		"title": "Virgin Radio Dubai",
+		"format": "audio/mpeg",
+		"freq": "104.1",
+		"logo": "virgin-radio-dubai.jpg",
+		"url": "https://stream.radiojar.com/nhq0vcqwuueuv"
+	},
+	{
+		"break": true
+	},
+	{
+		"title": "Ibiza Global",
+		"format": "audio/mpeg",
+		"logo": "ibiza-global-radio.jpg",
+		"url": "https://listenssl.ibizaglobalradio.com:8024/stream"
+	},
+	{
+		"title": "Qmusic",
+		"format": "audio/aac",
+		"logo": "q-music.jpg",
+		"url": "https://stream.qmusic.nl/qmusic/aaclow"
+	},
+	{
+		"title": "Qmusic Non-Stop",
+		"format": "audio/aac",
+		"logo": "q-music-non-stop.png",
+		"url": "https://stream.qmusic.nl/nonstop/aaclow"
+	},
+	{
+		"title": "Radio 538",
+		"format": "audio/aac",
+		"logo": "radio-538.png",
+		"url": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIO538AAC.aac"
+	},
+	{
+		"break": true
+	},
+	{
+		"title": "Radio 538 Non-Stop",
+		"format": "audio/aac",
+		"logo": "radio-538-non-stop.png",
+		"url": "https://playerservices.streamtheworld.com/api/livestream-redirect/TLPSTR09AAC.aac"
+	},
+	{
+		"title": "Radio Veronica",
+		"format": "audio/aac",
+		"logo": "radio-veronica.png",
+		"url": "https://playerservices.streamtheworld.com/api/livestream-redirect/VERONICAAAC.aac"
+	},
+	{
+		"title": "Radio Veronica Top 1000",
+		"format": "audio/aac",
+		"logo": "radio-veronica-top-1000.png",
+		"url": "https://playerservices.streamtheworld.com/api/livestream-redirect/SRGSTR10AAC.aac"
+	},
+	{
+		"break": true
+	},
+	{
+		"title": "BBC Radio 1",
+		"format": "application/x-mpegurl",
+		"logo": "bbc-radio-1.png",
+		"url": "https://as-hls-ww-live.akamaized.net/pool_904/live/ww/bbc_radio_one/bbc_radio_one.isml/bbc_radio_one-audio%3d96000.norewind.m3u8"
+	},
+	{
+		"title": "BBC Radio 1Dance",
+		"format": "application/x-mpegurl",
+		"logo": "bbc-radio-1dance.png",
+		"url": "https://as-hls-ww-live.akamaized.net/pool_904/live/ww/bbc_radio_one_dance/bbc_radio_one_dance.isml/bbc_radio_one_dance-audio%3d96000.norewind.m3u8"
+	},
+	{
+		"title": "BBC Radio 1Xtra",
+		"format": "application/x-mpegurl",
+		"logo": "bbc-radio-1xtra.png",
+		"url": "https://as-hls-ww-live.akamaized.net/pool_904/live/ww/bbc_1xtra/bbc_1xtra.isml/bbc_1xtra-audio%3d96000.norewind.m3u8"
+	},
+	{
+		"title": "BBC Radio 2",
+		"format": "application/x-mpegurl",
+		"logo": "bbc-radio-2.png",
+		"url": "https://as-hls-ww-live.akamaized.net/pool_904/live/ww/bbc_radio_two/bbc_radio_two.isml/bbc_radio_two-audio%3d96000.norewind.m3u8"
+	},
+	{
+		"break": true
+	},
+	{
+		"title": "BBC Radio 3",
+		"format": "application/x-mpegurl",
+		"logo": "bbc-radio-3.png",
+		"url": "https://as-hls-ww-live.akamaized.net/pool_904/live/ww/bbc_radio_three/bbc_radio_three.isml/bbc_radio_three-audio%3d96000.norewind.m3u8"
+	},
+	{
+		"title": "BBC Radio 4",
+		"format": "application/x-mpegurl",
+		"logo": "bbc-radio-4.png",
+		"url": "https://as-hls-ww-live.akamaized.net/pool_904/live/ww/bbc_radio_fourfm/bbc_radio_fourfm.isml/bbc_radio_fourfm-audio%3d96000.norewind.m3u8"
+	},
+	{
+		"title": "BBC Radio 4Xtra",
+		"format": "application/x-mpegurl",
+		"logo": "bbc-radio-4xtra.png",
+		"url": "https://as-hls-ww-live.akamaized.net/pool_904/live/ww/bbc_radio_four_extra/bbc_radio_four_extra.isml/bbc_radio_four_extra-audio%3d96000.norewind.m3u8"
+	},
+	{
+		"title": "BBC Radio 5 Live",
+		"format": "application/x-mpegurl",
+		"logo": "bbc-radio-5-live.png",
+		"url": "https://as-hls-ww-live.akamaized.net/pool_904/live/ww/bbc_radio_five_live/bbc_radio_five_live.isml/bbc_radio_five_live-audio%3d96000.norewind.m3u8"
+	},
+	{
+		"break": true
+	},
+	{
+		"title": "BBC Radio 6 Music",
+		"format": "application/x-mpegurl",
+		"logo": "bbc-radio-6-music.png",
+		"url": "https://as-hls-ww-live.akamaized.net/pool_904/live/ww/bbc_6music/bbc_6music.isml/bbc_6music-audio%3d96000.norewind.m3u8"
+	},
+	{
+		"title": "KISS",
+		"format": "audio/aac",
+		"logo": "kiss.jpg",
+		"url": "https://api.stash.in.net/hello-rayo/?url=aHR0cHM6Ly9zdHJlYW0ta2lzcy5wbGFuZXRyYWRpby5jby51ay9raXNzbmF0aW9uYWwuYWFjP2RpcmVjdD10cnVl"
+	},
+	{
+		"title": "KISStory",
+		"format": "audio/aac",
+		"logo": "kisstory.jpg",
+		"url": "https://api.stash.in.net/hello-rayo/?url=aHR0cHM6Ly9zdHJlYW0ta2lzcy5wbGFuZXRyYWRpby5jby51ay9raXNzdG9yeS5hYWM_ZGlyZWN0PXRydWU"
+	},
+	{
+		"title": "Jazz FM",
+		"format": "audio/aac",
+		"logo": "jazz-fm.png",
+		"url": "https://api.stash.in.net/hello-rayo/?url=aHR0cHM6Ly9zdHJlYW0tYWwucGxhbmV0cmFkaW8uY28udWsvamF6emhpZ2guYWFjP2RpcmVjdD10cnVl"
+	},
+	{
+		"break": true
+	},
+	{
+		"title": "Virgin Radio Lebanon",
+		"format": "audio/mpeg",
+		"logo": "virgin-radio-lebanon.png",
+		"url": "https://stream.zeno.fm/dwxw3p9vea0uv"
+	},
+	{
+		"break": true
+	},
+	{
+		"title": "Angus Radio",
+		"format": "audio/mpeg",
+		"logo": "jimny.png",
+		"url": "https://play.smolyakov.dev/stream/sa/radio-x"
+	}
+]

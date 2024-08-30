@@ -1,0 +1,7 @@
+#EXTM3U
+
+{{#each .}}
+{{#unless break}}#EXTINF:-1 radio="true" tvg-name="{{title}}" tvg-logo="https://radio.stash.in.net/logos/{{logo}}",{{#if freq}}{{freq}} - {{/if}}{{title}}{{/unless}}
+{{url}}
+
+{{/each}}

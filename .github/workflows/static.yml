@@ -1,0 +1,83 @@
+name: Deploy Website
+
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["main"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # Single deploy job since we're just deploying
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        name: Checkout
+
+      - uses: guibranco/github-file-reader-action-v2@latest
+        name: Read JSON data
+        id: template-context
+        with:
+          path: ./streams.json
+
+      - uses: badsyntax/github-action-render-template@v0.0.1
+        name: Render HTML
+        id: render-html
+        with:
+          template: ./templates/html.hbs
+          inputs: ${{ steps.template-context.outputs.contents }}
+
+      - uses: DamianReeves/write-file-action@v1.3
+        name: Write HTML
+        with:
+          path: output/index.html
+          contents: ${{ steps.render-html.outputs.result }}
+          write-mode: overwrite
+
+      - uses: badsyntax/github-action-render-template@v0.0.1
+        name: Render M3U8
+        id: render-m3u8
+        with:
+          template: ./templates/m3u8.hbs
+          inputs: ${{ steps.template-context.outputs.contents }}
+
+      - uses: DamianReeves/write-file-action@v1.3
+        name: Write M3U8
+        with:
+          path: output/radio.m3u8
+          contents: ${{ steps.render-m3u8.outputs.result }}
+          write-mode: overwrite
+
+      - name: Deploy files
+        run: |
+             cp -R -v ./logos ./*.png ./*.ico ./site.webmanifest ./output
+
+      - uses: actions/configure-pages@v5
+        name: Setup Pages
+        
+      - uses: actions/upload-pages-artifact@v3
+        name: Upload artifact
+        with:
+          # Upload entire repository
+          path: output/
+
+      - uses: actions/deploy-pages@v4
+        name: Deploy to GitHub Pages
+        id: deployment
