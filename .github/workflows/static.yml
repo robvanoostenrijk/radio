@@ -37,6 +37,9 @@ jobs:
         with:
           path: ./streams.json
 
+      #
+      # index.html
+      #
       - uses: badsyntax/github-action-render-template@v0.0.1
         name: Render HTML
         id: render-html
@@ -51,6 +54,26 @@ jobs:
           contents: ${{ steps.render-html.outputs.result }}
           write-mode: overwrite
 
+      #
+      # app.js
+      #
+      - uses: badsyntax/github-action-render-template@v0.0.1
+        name: Render Javascript
+        id: render-js
+        with:
+          template: ./templates/script.hbs
+          inputs: ${{ steps.template-context.outputs.contents }}
+
+      - uses: DamianReeves/write-file-action@v1.3
+        name: Write Javascript
+        with:
+          path: output/radio.js
+          contents: ${{ steps.render-js.outputs.result }}
+          write-mode: overwrite
+
+      #
+      # radio.m3u8
+      #
       - uses: badsyntax/github-action-render-template@v0.0.1
         name: Render M3U8
         id: render-m3u8
@@ -67,7 +90,7 @@ jobs:
 
       - name: Deploy files
         run: |
-             cp -R -v ./logos ./*.png ./*.ico ./site.webmanifest ./output
+             cp -R -v ./assets ./logos ./app.css ./*.png ./*.ico ./site.webmanifest ./output
 
       - uses: actions/configure-pages@v5
         name: Setup Pages

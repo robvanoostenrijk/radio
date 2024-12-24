@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en">
 
 	<head>
 		<link rel="preconnect" href="https://cdn.jsdelivr.net">
@@ -8,146 +8,119 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Radio</title>
 
-		<link rel="icon" href="/favicon.ico">
-		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-		<link rel="manifest" href="/site.webmanifest">
+		<link rel="icon" href="favicon.ico">
+		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+		<link rel="manifest" href="site.webmanifest">
 
 		<meta property="og:title" content="Online Radio" />
 		<meta property="og:url" content="https://radio.stash.in.net/" />
-		<meta property="og:image" content="https://radio.stash.in.net/opengraph.png" />
+		<meta property="og:image" content="opengraph.png" />
 
-		<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" crossorigin="anonymous">
-		<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/material-icons@1.13.12/iconfont/material-icons.min.css" crossorigin="anonymous">
-		<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.min.css" crossorigin="anonymous">
+		<!-- Include Style Sheet -->
+		<link rel="stylesheet" type="text/css" href="app.css"/>
 
 		<style>
 			body {
 				padding-top: 2rem;
 				background-color: #333;
 			}
-
-			p { text-align: center; }
-
-			.card {
-				margin: 0 0.5rem 1rem 0.5rem;
-				padding-top: 0.5rem;
-				width: 15rem;
-			}
-
-			.card-body {
-				padding-left: 0;
-				padding-right: 0;
-				text-align: center;
-			}
-
-			.card img {
-				width: 100%;
-				height: 12rem;
-			}
-
-			.card p { min-height: 2rem; }
-			.card pre { margin: 0; }
-
-			.card pre span { vertical-align: text-bottom; }
-			
-			.card a { display: block; }
-
-			.modal-header { border-bottom: none; padding-bottom: 0; }
-			.modal-body { text-align: center; padding-top: 0; }
 		</style>
 	</head>
 
 	<body>
-		<div class="container">
-			<div class="row justify-content-center">
-				{{#each .}}
-				{{#if break}}
-				</div>
-				<div class="row justify-content-center">
-				{{else}}
-				<div class="card">
-					<a href="{{url}}" data-format="{{format}}" data-bs-toggle="modal" data-bs-target="#playerModal">
-						<img class="card-img-top" src="logos/{{logo}}" width="300" height="300">
-					</a>
-					<div class="card-body">
-						{{#if freq}}
-						<pre><span class="material-icons-outlined">radio</span> {{freq}} Mhz</pre>
-						{{/if}}
-						<p class="card-text">{{title}}</p>
-						<a href="{{url}}" class="btn btn-primary" data-format="{{format}}" data-bs-toggle="modal" data-bs-target="#playerModal">Listen</a>
+		<!-- Blue Playlist Container -->
+		<div id="blue-playlist-container">
+
+			<!-- Amplitude Player -->
+			<div id="amplitude-player">
+
+				<!-- Left Side Player -->
+				<div id="amplitude-left">
+					<img data-amplitude-song-info="cover_art_url" class="album-art"/>
+					<div id="player-left-bottom">
+						<div id="time-container">
+							<span class="current-time">
+								<span class="amplitude-current-minutes" ></span>:<span class="amplitude-current-seconds"></span>
+							</span>
+							<div id="progress-container">
+								<div class="amplitude-wave-form"></div>
+								<input type="range" class="amplitude-song-slider"/>
+								<progress id="song-played-progress" class="amplitude-song-played-progress"></progress>
+								<progress id="song-buffered-progress" class="amplitude-buffered-progress" value="0"></progress>
+							</div>
+							<span class="duration">
+								<span class="amplitude-duration-minutes"></span>:<span class="amplitude-duration-seconds"></span>
+							</span>
+						</div>
+
+						<div id="control-container">
+
+							<div id="repeat-container">
+								<!--
+								<div class="amplitude-repeat" id="repeat"></div>
+								<div class="amplitude-shuffle amplitude-shuffle-off" id="shuffle"></div>
+								-->
+							</div>
+
+							<div id="central-control-container">
+								<div id="central-controls">
+									<div class="amplitude-prev" id="previous"></div>
+									<div class="amplitude-play-pause" id="play-pause"></div>
+									<div class="amplitude-next" id="next"></div>
+								</div>
+							</div>
+
+							<div id="volume-container">
+								<div class="volume-controls">
+									<div class="amplitude-mute amplitude-not-muted"></div>
+									<input type="range" class="amplitude-volume-slider"/>
+									<div class="ms-range-fix"></div>
+								</div>
+								<div class="amplitude-shuffle amplitude-shuffle-off" id="shuffle-right"></div>
+							</div>
+						</div>
+
+						<div id="meta-container">
+							<span data-amplitude-song-info="name" class="song-name"></span>
+
+							<div class="song-artist-album">
+								<span data-amplitude-song-info="artist"></span>
+								<span data-amplitude-song-info="album"></span>
+							</div>
+						</div>
 					</div>
 				</div>
-				{{/if}}
-				{{/each}}
+				<!-- End Left Side Player -->
+
+				<!-- Right Side Player -->
+				<div id="amplitude-right">
+					{{#each .}}
+					<div class="song amplitude-song-container amplitude-play-pause" data-amplitude-song-index="{{@index}}">
+						<div class="song-now-playing-icon-container">
+							<div class="play-button-container"></div>
+							<img class="now-playing" src="assets/now-playing.svg"/>
+						</div>
+						<div class="song-meta-data">
+							<span class="song-title">{{title}}</span>
+							<span class="song-artist">{{freq}}</span>
+						</div>
+						<a href="{{url}}" class="bandcamp-link" target="_blank">
+							<img class="bandcamp-grey" src="logos/{{logo}}" />
+							<img class="bandcamp-white" src="logos/{{logo}}" />
+						</a>
+						<span class="song-duration">LIVE</span>
+					</div>
+					{{/each}}
+				</div>
+				<!-- End Right Side Player -->
 			</div>
+			<!-- End Amplitdue Player -->
+
 		</div>
-
-		<div class="modal fade" id="playerModal" tabindex="-1" role="dialog" aria-labelledby="playerModalTitle" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered" role="document">
-				<div class="modal-content">
-					<div class="modal-header">
-						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-					</div>
-					<div class="modal-body">
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<script src="//cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
-		<script src="//cdn.jsdelivr.net/npm/hls.js@1.5.15/dist/hls.min.js" crossorigin="anonymous"></script>
-		<script src="//cdn.jsdelivr.net/npm/plyr@3.7.8/dist/plyr.min.js" crossorigin="anonymous"></script>
-		<script type="text/javascript">
-			const playerModal = document.getElementById("playerModal");
-			const modal = document.querySelector("div.modal-body");
-			const hls = new Hls();
-			let plyr = null;
-
-			if (playerModal) {
-
-				playerModal.addEventListener("show.bs.modal", event => {
-					const item = event.relatedTarget;
-					const card = item.closest("div.card");
-
-					console.log(`Source: ${item.dataset.format} / ${item.getAttribute("href")}`);
-
-					modal.innerHTML = `<img src="${card.querySelector("img").getAttribute("src")}" width="300" height="300" /><audio id="player" playsinline controls></audio>`;
-
-					plyr = new Plyr("#player", {
-						"autoplay": true,
-						"controls": [ "play", "progress", "mute", "volume", "airplay"],
-						"displayDuration": false,
-						"playsinline": true
-					});
-
-					switch (item.dataset.format) {
-						case "application/x-mpegurl":
-							hls.loadSource(item.getAttribute("href"));
-							hls.attachMedia(player);
-							break;
-						default:
-							plyr.source = {
-								type: "audio",
-								title: card.querySelector("p").textContent,
-								"sources": [
-									{
-										"src": item.getAttribute("href"),
-										"type": item.dataset.format
-									},
-								]
-							};
-							break;
-					}
-				});
-
-				playerModal.addEventListener("hide.bs.modal", event => {
-					plyr.destroy();
-					modal.replaceChildren();
-				});
-
-			}
-		</script>
+		<script src="//cdn.jsdelivr.net/npm/hls.js@latest/dist/hls.min.js" crossorigin="anonymous"></script>
+		<script src="//cdn.jsdelivr.net/npm/amplitudejs@latest/dist/amplitude.min.js" crossorigin="anonymous"></script>
+		<script src="radio.js"></script>
 	</body>
 </html>
