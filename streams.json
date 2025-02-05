@@ -193,7 +193,7 @@
 		"format": "application/x-mpegurl",
 		"freq": "UK",
 		"logo": "bbc-radio-sussex.png",
-		"url": "https://as-hls-uk-live.akamaized.net/pool_76643803/live/uk/bbc_radio_sussex/bbc_radio_sussex.isml/bbc_radio_sussex-audio%3d320000.norewind.m3u8"
+		"url": "https://as-hls-ww-live.akamaized.net/pool_76643803/live/ww/bbc_radio_sussex/bbc_radio_sussex.isml/bbc_radio_sussex-audio%3d320000.norewind.m3u8"
 	},
 	{
 		"title": "BBC WM",
