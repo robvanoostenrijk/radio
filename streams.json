@@ -116,63 +116,63 @@
 		"format": "application/x-mpegurl",
 		"freq": "UK",
 		"logo": "bbc-radio-1.png",
-		"url": "https://as-hls-ww-live.akamaized.net/pool_904/live/ww/bbc_radio_one/bbc_radio_one.isml/bbc_radio_one-audio%3d96000.norewind.m3u8"
+		"url": "https://as-hls-ww-live.akamaized.net/pool_01505109/live/ww/bbc_radio_one/bbc_radio_one.isml/bbc_radio_one-audio%3d320000.norewind.m3u8"
 	},
 	{
 		"title": "BBC Radio 1Dance",
 		"format": "application/x-mpegurl",
 		"freq": "UK",
 		"logo": "bbc-radio-1dance.png",
-		"url": "https://as-hls-ww-live.akamaized.net/pool_904/live/ww/bbc_radio_one_dance/bbc_radio_one_dance.isml/bbc_radio_one_dance-audio%3d96000.norewind.m3u8"
+		"url": "https://as-hls-ww-live.akamaized.net/pool_62063831/live/ww/bbc_radio_one_dance/bbc_radio_one_dance.isml/bbc_radio_one_dance-audio%3d96000.norewind.m3u8"
 	},
 	{
 		"title": "BBC Radio 1Xtra",
 		"format": "application/x-mpegurl",
 		"freq": "UK",
 		"logo": "bbc-radio-1xtra.png",
-		"url": "https://as-hls-ww-live.akamaized.net/pool_904/live/ww/bbc_1xtra/bbc_1xtra.isml/bbc_1xtra-audio%3d96000.norewind.m3u8"
+		"url": "https://as-hls-ww-live.akamaized.net/pool_92079267/live/ww/bbc_1xtra/bbc_1xtra.isml/bbc_1xtra-audio%3d96000.norewind.m3u8"
 	},
 	{
 		"title": "BBC Radio 2",
 		"format": "application/x-mpegurl",
 		"freq": "UK",
 		"logo": "bbc-radio-2.png",
-		"url": "https://as-hls-ww-live.akamaized.net/pool_904/live/ww/bbc_radio_two/bbc_radio_two.isml/bbc_radio_two-audio%3d96000.norewind.m3u8"
+		"url": "https://as-hls-ww-live.akamaized.net/pool_74208725/live/ww/bbc_radio_two/bbc_radio_two.isml/bbc_radio_two-audio%3d96000.norewind.m3u8"
 	},
 	{
 		"title": "BBC Radio 3",
 		"format": "application/x-mpegurl",
 		"freq": "UK",
 		"logo": "bbc-radio-3.png",
-		"url": "https://as-hls-ww-live.akamaized.net/pool_904/live/ww/bbc_radio_three/bbc_radio_three.isml/bbc_radio_three-audio%3d96000.norewind.m3u8"
+		"url": "https://as-hls-ww-live.akamaized.net/pool_23461179/live/ww/bbc_radio_three/bbc_radio_three.isml/bbc_radio_three-audio%3d96000.norewind.m3u8"
 	},
 	{
 		"title": "BBC Radio 4",
 		"format": "application/x-mpegurl",
 		"freq": "UK",
 		"logo": "bbc-radio-4.png",
-		"url": "https://as-hls-ww-live.akamaized.net/pool_904/live/ww/bbc_radio_fourfm/bbc_radio_fourfm.isml/bbc_radio_fourfm-audio%3d96000.norewind.m3u8"
+		"url": "https://as-hls-ww-live.akamaized.net/pool_55057080/live/ww/bbc_radio_fourfm/bbc_radio_fourfm.isml/bbc_radio_fourfm-audio%3d96000.norewind.m3u8"
 	},
 	{
 		"title": "BBC Radio 4Xtra",
 		"format": "application/x-mpegurl",
 		"freq": "UK",
 		"logo": "bbc-radio-4xtra.png",
-		"url": "https://as-hls-ww-live.akamaized.net/pool_904/live/ww/bbc_radio_four_extra/bbc_radio_four_extra.isml/bbc_radio_four_extra-audio%3d96000.norewind.m3u8"
+		"url": "https://as-hls-ww-live.akamaized.net/pool_26173715/live/ww/bbc_radio_four_extra/bbc_radio_four_extra.isml/bbc_radio_four_extra-audio%3d96000.norewind.m3u8"
 	},
 	{
 		"title": "BBC Radio 5 Live",
 		"format": "application/x-mpegurl",
 		"freq": "UK",
 		"logo": "bbc-radio-5-live.png",
-		"url": "https://as-hls-ww-live.akamaized.net/pool_904/live/ww/bbc_radio_five_live/bbc_radio_five_live.isml/bbc_radio_five_live-audio%3d96000.norewind.m3u8"
+		"url": "https://as-hls-ww-live.akamaized.net/pool_89021708/live/ww/bbc_radio_five_live/bbc_radio_five_live.isml/bbc_radio_five_live-audio%3d96000.norewind.m3u8"
 	},
 	{
 		"title": "BBC Radio 6 Music",
 		"format": "application/x-mpegurl",
 		"freq": "UK",
 		"logo": "bbc-radio-6-music.png",
-		"url": "https://as-hls-ww-live.akamaized.net/pool_904/live/ww/bbc_6music/bbc_6music.isml/bbc_6music-audio%3d96000.norewind.m3u8"
+		"url": "https://as-hls-ww-live.akamaized.net/pool_81827798/live/ww/bbc_6music/bbc_6music.isml/bbc_6music-audio%3d96000.norewind.m3u8"
 	},
 	{
 		"title": "KISS",
