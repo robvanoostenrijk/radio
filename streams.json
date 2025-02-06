@@ -73,7 +73,7 @@
 		"title": "One World Radio",
 		"format": "audio/aac",
 		"freq": "NL",
-		"logl": "one-world-radio.jpg",
+		"logo": "one-world-radio.jpg",
 		"url": "https://playerservices.streamtheworld.com/api/livestream-redirect/OWR_INTERNATIONAL_ADP.aac"
 	},
 	{
