@@ -70,6 +70,13 @@
 		"url": "https://listenssl.ibizaglobalradio.com:8024/stream"
 	},
 	{
+		"title": "One World Radio",
+		"format": "audio/aac",
+		"freq": "NL",
+		"logl": "one-world-radio.jpg",
+		"url": "https://playerservices.streamtheworld.com/api/livestream-redirect/OWR_INTERNATIONAL_ADP.aac"
+	},
+	{
 		"title": "Qmusic",
 		"format": "audio/aac",
 		"freq": "NL",
@@ -175,13 +182,6 @@
 		"url": "https://as-hls-ww-live.akamaized.net/pool_81827798/live/ww/bbc_6music/bbc_6music.isml/bbc_6music-audio%3d96000.norewind.m3u8"
 	},
 	{
-		"title": "BBC London",
-		"format": "application/x-mpegurl",
-		"freq": "UK",
-		"logo": "bbc-radio-london.jpg",
-		"url": "https://as-hls-ww-live.akamaized.net/pool_98137350/live/ww/bbc_london/bbc_london.isml/bbc_london-audio%3d320000.norewind.m3u8"
-	},
-	{
 		"title": "BBC Essex",
 		"format": "application/x-mpegurl",
 		"freq": "UK",
@@ -189,17 +189,32 @@
 		"url": "https://as-hls-ww-live.akamaized.net/pool_23657270/live/ww/bbc_radio_essex/bbc_radio_essex.isml/bbc_radio_essex-audio%3d320000.norewind.m3u8"
 	},
 	{
+		"title": "BBC Lincolnshire",
+		"format": "application/x-mpegurl",
+		"freq": "UK",
+		"logo": "bbc-radio-lincolnshire.jpg",
+		"url": "https://as-hls-ww-live.akamaized.net/pool_77667780/live/ww/bbc_radio_lincolnshire/bbc_radio_lincolnshire.isml/bbc_radio_lincolnshire-audio%3d320000.norewind.m3u8"
+	},
+
+	{
+		"title": "BBC London",
+		"format": "application/x-mpegurl",
+		"freq": "UK",
+		"logo": "bbc-radio-london.jpg",
+		"url": "https://as-hls-ww-live.akamaized.net/pool_98137350/live/ww/bbc_london/bbc_london.isml/bbc_london-audio%3d320000.norewind.m3u8"
+	},
+	{
 		"title": "BBC Sussex",
 		"format": "application/x-mpegurl",
 		"freq": "UK",
-		"logo": "bbc-radio-sussex.png",
+		"logo": "bbc-radio-sussex.jpg",
 		"url": "https://as-hls-ww-live.akamaized.net/pool_76643803/live/ww/bbc_radio_sussex/bbc_radio_sussex.isml/bbc_radio_sussex-audio%3d320000.norewind.m3u8"
 	},
 	{
 		"title": "BBC WM",
 		"format": "application/x-mpegurl",
 		"freq": "UK",
-		"logo": "bbc-radio-wm.png",
+		"logo": "bbc-radio-wm.jpg",
 		"url": "https://as-hls-ww-live.akamaized.net/pool_05353924/live/ww/bbc_wm/bbc_wm.isml/bbc_wm-audio%3d320000.norewind.m3u8"
 	},
 	{
