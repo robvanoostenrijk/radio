@@ -207,21 +207,21 @@
 		"format": "audio/aac",
 		"freq": "UK",
 		"logo": "kiss.jpg",
-		"url": "https://api.stash.in.net/hello-rayo/?url=aHR0cHM6Ly9zdHJlYW0ta2lzcy5wbGFuZXRyYWRpby5jby51ay9raXNzbmF0aW9uYWwuYWFjP2RpcmVjdD10cnVl"
+		"url": "https://api.stash.in.net/hello-rayo/?url=aHR0cHM6Ly9zdHJlYW0ta2lzcy5oZWxsb3JheW8uY28udWsva2lzc25hdGlvbmFsLmFhYz9kaXJlY3Q9dHJ1ZQ"
 	},
 	{
 		"title": "KISStory",
 		"format": "audio/aac",
 		"freq": "UK",
 		"logo": "kisstory.jpg",
-		"url": "https://api.stash.in.net/hello-rayo/?url=aHR0cHM6Ly9zdHJlYW0ta2lzcy5wbGFuZXRyYWRpby5jby51ay9raXNzdG9yeS5hYWM_ZGlyZWN0PXRydWU"
+		"url": "https://api.stash.in.net/hello-rayo/?url=aHR0cHM6Ly9zdHJlYW0ta2lzcy5oZWxsb3JheW8uY28udWsva2lzc3RvcnkuYWFjP2RpcmVjdD10cnVl"
 	},
 	{
 		"title": "Jazz FM",
 		"format": "audio/aac",
 		"freq": "UK",
 		"logo": "jazz-fm.png",
-		"url": "https://api.stash.in.net/hello-rayo/?url=aHR0cHM6Ly9zdHJlYW0tYWwucGxhbmV0cmFkaW8uY28udWsvamF6emhpZ2guYWFjP2RpcmVjdD10cnVl"
+		"url": "https://api.stash.in.net/hello-rayo/?url=aHR0cHM6Ly9zdHJlYW0tYWwuaGVsbG9yYXlvLmNvLnVrL2phenpoaWdoLmFhYz9kaXJlY3Q9dHJ1ZQ"
 	},
 	{
 		"title": "Virgin Radio Lebanon",
