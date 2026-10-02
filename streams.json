@@ -1,12 +1,5 @@
 [
 	{
-		"title": "Beat FM 97.8",
-		"format": "audio/aac",
-		"freq": "97.8",
-		"logo": "beat-97.8.jpg",
-		"url": "https://funasia.streamguys1.com/live3"
-	},
-	{
 		"title": "Big 106.2",
 		"format": "audio/aac",
 		"freq": "106.2",
@@ -35,25 +28,18 @@
 		"url": "https://stream.radiojar.com/shcthrfbsxquv"
 	},
 	{
-		"title": "Pure 94.7",
-		"format": "audio/mpeg",
-		"freq": "94.7",
-		"logo": "pure-94.7.png",
-		"url": "https://stream.rcs.revma.com/r6hktd84u7zuv"
-	},
-	{
 		"title": "Radio 1 UAE",
 		"format": "application/x-mpegurl",
 		"freq": "104.1",
 		"logo": "radio-1-uae.png",
-		"url": "https://vo-live.cdb.cdn.orange.com/Content/Channel/Radio1/HLS/index.m3u8"
+		"url": "https://admn-radio-cdn-lb.starzplayarabia.com/out/v1/admn_radio_enc/radio_1/radio_1_hls_nd/index_radio1fm_audio_enc_ara.m3u8"
 	},
 	{
 		"title": "Radio 2 UAE",
 		"format": "application/x-mpegurl",
 		"freq": "99.3",
 		"logo": "radio-2-uae.png",
-		"url": "https://vo-live.cdb.cdn.orange.com/Content/Channel/radio_2/HLS/index.m3u8"
+		"url": "https://admn-radio-cdn-lb.starzplayarabia.com/out/v1/admn_radio_enc/radio_2/radio_2_hls_nd/index_radio2fm_audio_enc_ara.m3u8"
 	},
 	{
 		"title": "Virgin Radio Dubai",
@@ -216,40 +202,5 @@
 		"freq": "UK",
 		"logo": "bbc-radio-wm.jpg",
 		"url": "https://as-hls-ww-live.akamaized.net/pool_05353924/live/ww/bbc_wm/bbc_wm.isml/bbc_wm-audio%3d320000.norewind.m3u8"
-	},
-	{
-		"title": "KISS",
-		"format": "audio/aac",
-		"freq": "UK",
-		"logo": "kiss.jpg",
-		"url": "https://api.stash.in.net/hello-rayo/?url=aHR0cHM6Ly9zdHJlYW0ta2lzcy5oZWxsb3JheW8uY28udWsva2lzc25hdGlvbmFsLmFhYz9kaXJlY3Q9dHJ1ZQ"
-	},
-	{
-		"title": "KISStory",
-		"format": "audio/aac",
-		"freq": "UK",
-		"logo": "kisstory.jpg",
-		"url": "https://api.stash.in.net/hello-rayo/?url=aHR0cHM6Ly9zdHJlYW0ta2lzcy5oZWxsb3JheW8uY28udWsva2lzc3RvcnkuYWFjP2RpcmVjdD10cnVl"
-	},
-	{
-		"title": "Jazz FM",
-		"format": "audio/aac",
-		"freq": "UK",
-		"logo": "jazz-fm.png",
-		"url": "https://api.stash.in.net/hello-rayo/?url=aHR0cHM6Ly9zdHJlYW0tYWwuaGVsbG9yYXlvLmNvLnVrL2phenpoaWdoLmFhYz9kaXJlY3Q9dHJ1ZQ"
-	},
-	{
-		"title": "Virgin Radio Lebanon",
-		"format": "audio/mpeg",
-		"freq": "LB",
-		"logo": "virgin-radio-lebanon.png",
-		"url": "https://stream.zeno.fm/dwxw3p9vea0uv"
-	},
-	{
-		"title": "Angus Radio",
-		"format": "audio/mpeg",
-		"freq": "XX",
-		"logo": "jimny.png",
-		"url": "https://play.smolyakov.dev/stream/sa/radio-x"
 	}
 ]
