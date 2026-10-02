@@ -90,11 +90,11 @@ jobs:
 
       - name: Deploy files
         run: |
-             cp -R -v ./assets ./logos ./app.css ./*.png ./*.ico ./site.webmanifest ./output
+             cp -R -v ./assets ./logos ./app.css ./*.png ./*.ico ./*.m3u8 ./site.webmanifest ./output
 
       - uses: actions/configure-pages@v5
         name: Setup Pages
-        
+
       - uses: actions/upload-pages-artifact@v3
         name: Upload artifact
         with:
