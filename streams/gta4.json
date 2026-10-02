@@ -1,14 +1,134 @@
 [
-	{
-		"title": "K109 - The Studio",
-		"format": "audio/mpeg",
-		"logo": "gta/k109-the-studio.jpeg",
-		"url": "https://audio.gtaradio.net/4/k109_the_studio"
-	},
-	{
-		"title": "The Journey",
-		"format": "audio/mpeg",
-		"logo": "gta/the-journey.jpeg",
-		"url": "https://audio.gtaradio.net/4/classical_ambient"
-	}
+  {
+    "title": "International Funk 99",
+    "format": "audio/mpeg",
+    "logo": "gta/international-funk-99.jpeg",
+    "url": "https://audio.gtaradio.net/4/afro_beat"
+  },
+  {
+    "title": "Tuff Gong Radio",
+    "format": "audio/mpeg",
+    "logo": "gta/tuff-gong-radio.jpeg",
+    "url": "https://audio.gtaradio.net/4/babylon"
+  },
+  {
+    "title": "The Vibe 98.8",
+    "format": "audio/mpeg",
+    "logo": "gta/the-vibe-98.8.jpeg",
+    "url": "https://audio.gtaradio.net/4/the_vibe"
+  },
+  {
+    "title": "Liberty Rock Radio 97.8",
+    "format": "audio/mpeg",
+    "logo": "gta/liberty-rock-radio-97.8.jpeg",
+    "url": "https://audio.gtaradio.net/4/liberty_rock"
+  },
+  {
+    "title": "Jazz Nation Radio 108.5",
+    "format": "audio/mpeg",
+    "logo": "gta/jazz-nation-radio-108.5.jpeg",
+    "url": "https://audio.gtaradio.net/4/jazz_nation"
+  },
+  {
+    "title": "Massive B Soundsystem 96.9",
+    "format": "audio/mpeg",
+    "logo": "gta/massive-b-soundsystem-96.9.jpeg",
+    "url": "https://audio.gtaradio.net/4/bobby_konders"
+  },
+  {
+    "title": "Self Actualization FM",
+    "format": "audio/mpeg",
+    "logo": "gta/self-actualization-fm.jpeg",
+    "url": "https://audio.gtaradio.net/4/meditation"
+  },
+  {
+    "title": "K109 The Studio",
+    "format": "audio/mpeg",
+    "logo": "gta/k109-the-studio.jpeg",
+    "url": "https://audio.gtaradio.net/4/k109_the_studio"
+  },
+  {
+    "title": "Vice City FM",
+    "format": "audio/mpeg",
+    "logo": "gta/vice-city-fm.jpeg",
+    "url": "https://audio.gtaradio.net/4/vcfm"
+  },
+  {
+    "title": "We Know The Truth",
+    "format": "audio/mpeg",
+    "logo": "gta/we-know-the-truth.jpeg",
+    "url": "https://audio.gtaradio.net/4/wktt"
+  },
+  {
+    "title": "Liberty City Hardcore",
+    "format": "audio/mpeg",
+    "logo": "gta/liberty-city-hardcore.jpeg",
+    "url": "https://audio.gtaradio.net/4/hardcore"
+  },
+  {
+    "title": "The Journey",
+    "format": "audio/mpeg",
+    "logo": "gta/the-journey.jpeg",
+    "url": "https://audio.gtaradio.net/4/classical_ambient"
+  },
+  {
+    "title": "Fusion FM",
+    "format": "audio/mpeg",
+    "logo": "gta/fusion-fm.jpeg",
+    "url": "https://audio.gtaradio.net/4/fusion_fm"
+  },
+  {
+    "title": "The Beat 102.7",
+    "format": "audio/mpeg",
+    "logo": "gta/the-beat-102.7.jpeg",
+    "url": "https://audio.gtaradio.net/4/beat_95"
+  },
+  {
+    "title": "Ram Jam FM",
+    "format": "audio/mpeg",
+    "logo": "gta/ram-jam-fm.jpeg",
+    "url": "https://audio.gtaradio.net/4/ramjamfm"
+  },
+  {
+    "title": "Radio Broker",
+    "format": "audio/mpeg",
+    "logo": "gta/radio-broker.jpeg",
+    "url": "https://audio.gtaradio.net/4/dance_rock"
+  },
+  {
+    "title": "Vladivostok FM",
+    "format": "audio/mpeg",
+    "logo": "gta/vladivostok-fm.jpeg",
+    "url": "https://audio.gtaradio.net/4/vladivostok"
+  },
+  {
+    "title": "Public Liberty Radio",
+    "format": "audio/mpeg",
+    "logo": "gta/public-liberty-radio.jpeg",
+    "url": "https://audio.gtaradio.net/4/plr"
+  },
+  {
+    "title": "San Juan Sounds",
+    "format": "audio/mpeg",
+    "logo": "gta/san-juan-sounds.jpeg",
+    "url": "https://audio.gtaradio.net/4/san_juan_sounds"
+  },
+  {
+    "title": "Electro Choc",
+    "format": "audio/mpeg",
+    "logo": "gta/electro-choc.jpeg",
+    "url": "https://audio.gtaradio.net/4/dance_mix"
+  },
+  {
+    "title": "The Classics 104.1",
+    "format": "audio/mpeg",
+    "logo": "gta/the-classics-104.1.jpeg",
+    "url": "https://audio.gtaradio.net/4/ny_classics"
+  },
+  {
+    "title": "Integrity 2.0",
+    "format": "audio/mpeg",
+    "logo": "gta/integrity-2.0.jpeg",
+    "url": "https://audio.gtaradio.net/4/lazlow"
+  }
 ]
