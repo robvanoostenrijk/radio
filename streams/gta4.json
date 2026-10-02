@@ -1,0 +1,14 @@
+[
+	{
+		"title": "K109 - The Studio",
+		"format": "audio/mpeg",
+		"logo": "gta/k109-the-studio.jpeg",
+		"url": "https://audio.gtaradio.net/4/k109_the_studio"
+	},
+	{
+		"title": "The Journey",
+		"format": "audio/mpeg",
+		"logo": "gta/the-journey.jpeg",
+		"url": "https://audio.gtaradio.net/4/classical_ambient"
+	}
+]

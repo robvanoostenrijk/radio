@@ -31,66 +31,48 @@ jobs:
       - uses: actions/checkout@v4
         name: Checkout
 
-      - uses: guibranco/github-file-reader-action-v2@latest
-        name: Read JSON data
-        id: template-context
-        with:
-          path: ./streams.json
+      - name: Render templates
+        run: |
+          npm install handlebars
+          mkdir -p output
 
-      #
-      # index.html
-      #
-      - uses: badsyntax/github-action-render-template@v0.0.1
-        name: Render HTML
-        id: render-html
-        with:
-          template: ./templates/html.hbs
-          inputs: ${{ steps.template-context.outputs.contents }}
+          node << 'EOF'
+          const fs = require("fs");
+          const path = require("path");
+          const Handlebars = require("handlebars");
 
-      - uses: DamianReeves/write-file-action@v1.3
-        name: Write HTML
-        with:
-          path: output/index.html
-          contents: ${{ steps.render-html.outputs.result }}
-          write-mode: overwrite
+          function render(templatePath, contextPath, outputPath) {
+            const template = Handlebars.compile(
+              fs.readFileSync(templatePath, "utf8"),
+              { noEscape: true }
+            );
+            const context = JSON.parse(fs.readFileSync(contextPath, "utf8"));
+            fs.mkdirSync(path.dirname(outputPath), { recursive: true });
+            fs.writeFileSync(outputPath, template(context));
+            console.log(`Rendered: ${contextPath} + ${templatePath} → ${outputPath}`);
+          }
 
-      #
-      # app.js
-      #
-      - uses: badsyntax/github-action-render-template@v0.0.1
-        name: Render Javascript
-        id: render-js
-        with:
-          template: ./templates/script.hbs
-          inputs: ${{ steps.template-context.outputs.contents }}
+          // Render index.html and radio.js from the main stream data
+          render("./templates/html.hbs", "./streams/radio.json", "output/index.html");
+          render("./templates/script.hbs", "./streams/radio.json", "output/radio.js");
 
-      - uses: DamianReeves/write-file-action@v1.3
-        name: Write Javascript
-        with:
-          path: output/radio.js
-          contents: ${{ steps.render-js.outputs.result }}
-          write-mode: overwrite
+          // Render an .m3u8 file for each JSON file in ./streams/
+          const streamFiles = fs.readdirSync("./streams")
+            .filter(f => f.endsWith(".json"));
 
-      #
-      # radio.m3u8
-      #
-      - uses: badsyntax/github-action-render-template@v0.0.1
-        name: Render M3U8
-        id: render-m3u8
-        with:
-          template: ./templates/m3u8.hbs
-          inputs: ${{ steps.template-context.outputs.contents }}
-
-      - uses: DamianReeves/write-file-action@v1.3
-        name: Write M3U8
-        with:
-          path: output/radio.m3u8
-          contents: ${{ steps.render-m3u8.outputs.result }}
-          write-mode: overwrite
+          for (const file of streamFiles) {
+            const basename = path.basename(file, ".json");
+            render(
+              "./templates/m3u8.hbs",
+              path.join("./streams", file),
+              path.join("output", `${basename}.m3u8`)
+            );
+          }
+          EOF
 
       - name: Deploy files
         run: |
-             cp -R -v ./assets ./logos ./app.css ./*.png ./*.ico ./*.m3u8 ./site.webmanifest ./output
+             cp -R -v ./*.ico ./*.png ./app.css ./assets ./logos ./output ./site.webmanifest
 
       - uses: actions/configure-pages@v5
         name: Setup Pages
